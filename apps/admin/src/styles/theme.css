@@ -1,0 +1,16 @@
+:root {
+  --cf-bg: #06090f;
+  --cf-surface: rgba(255, 255, 255, 0.06);
+  --cf-surface-2: rgba(255, 255, 255, 0.12);
+  --cf-border: rgba(148, 163, 184, 0.22);
+  --cf-text: #e7edf7;
+  --cf-muted: #9aa6b5;
+  --cf-brand: #6ad7ff;
+  --cf-brand-2: #6affc9;
+  --cf-accent: #f6cc7a;
+}
+
+::selection {
+  background: rgba(106, 215, 255, 0.25);
+  color: var(--cf-text);
+}

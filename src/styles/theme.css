@@ -1,0 +1,32 @@
+:root {
+  --cf-bg: #0b0e14;
+  --cf-surface: rgba(255, 255, 255, 0.06);
+  --cf-surface-2: rgba(255, 255, 255, 0.12);
+  --cf-border: rgba(148, 163, 184, 0.22);
+  --cf-text: #e7edf7;
+  --cf-muted: #9aa6b5;
+  --cf-brand: #6ad7ff;
+  --cf-brand-2: #6affc9;
+  --cf-accent: #f6cc7a;
+  --cf-ink: #0b0e14;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cf-bg: #f6f7fb;
+    --cf-surface: rgba(255, 255, 255, 0.8);
+    --cf-surface-2: rgba(255, 255, 255, 0.95);
+    --cf-border: rgba(15, 23, 42, 0.12);
+    --cf-text: #0f172a;
+    --cf-muted: #5b6473;
+    --cf-brand: #0ea5e9;
+    --cf-brand-2: #22c55e;
+    --cf-accent: #f59e0b;
+    --cf-ink: #0f172a;
+  }
+}
+
+::selection {
+  background: rgba(106, 215, 255, 0.25);
+  color: var(--cf-text);
+}

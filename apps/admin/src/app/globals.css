@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+@theme inline {
+  --color-background: var(--cf-bg);
+  --color-foreground: var(--cf-text);
+  --color-muted: var(--cf-muted);
+  --color-border: var(--cf-border);
+  --color-surface: var(--cf-surface);
+  --color-surface-2: var(--cf-surface-2);
+  --color-brand: var(--cf-brand);
+  --color-brand-2: var(--cf-brand-2);
+  --color-accent: var(--cf-accent);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--cf-bg);
+  color: var(--cf-text);
+  min-height: 100%;
+}
