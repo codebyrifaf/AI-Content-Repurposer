@@ -1,6 +1,5 @@
 import { redirect } from "next/navigation";
 import { DashboardClient } from "@/components/dashboard/DashboardClient";
-import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
 import { FREE_PLAN_LIMIT } from "@/lib/billing/config";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 import { fetchGenerations } from "@/lib/supabase/queries";
@@ -38,11 +37,10 @@ export default async function DashboardPage() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <DashboardHeader userEmail={user.email ?? "Account"} />
-      <main className="flex-1">
-        <DashboardClient initialHistory={history} initialUsage={usage} />
-      </main>
-    </div>
+    <DashboardClient
+      initialHistory={history}
+      initialUsage={usage}
+      userEmail={user.email ?? "Account"}
+    />
   );
 }
